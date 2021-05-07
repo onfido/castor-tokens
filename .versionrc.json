@@ -1,0 +1,6 @@
+{
+  "bumpFiles": ["packages/npm/package.json"],
+  "scripts": {
+    "postchangelog": "prettier CHANGELOG.md -w"
+  }
+}

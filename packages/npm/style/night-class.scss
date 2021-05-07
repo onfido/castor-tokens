@@ -1,0 +1,4 @@
+// this file will generate ./dist/night-class.css
+@use '../src' as theme;
+
+@include theme.night('class');

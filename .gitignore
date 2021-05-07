@@ -1,0 +1,27 @@
+# Files and folders that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Folder view configuration
+.DS_Store
+Desktop.ini
+
+# Editor configuration
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log*
+
+# Node specific
+node_modules
+*.tgz
+
+# Yarn specific
+yarn.lock
+
+# Repository specific
+dist
+packages/npm/src/tokens.scss
+packages/npm/src/theme-*.scss

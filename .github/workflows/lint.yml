@@ -1,0 +1,34 @@
+name: Lint
+
+on: push
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v2
+      - run: git fetch origin main # needed for commitlint
+
+      - name: Setup Node
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14
+
+      - name: Install Node dependencies
+        run: npm ci --no-audit --no-optional
+
+      - name: Run commitlint
+        if: github.actor != 'dependabot[bot]' # allow long commit message body
+        run: npm run lint:commit
+
+      - name: Run stylelint
+        run: npm run lint:style
+
+      - name: Run ESLint
+        run: npm run lint:es
+
+      - name: Run Prettier
+        run: npm run lint:prettier

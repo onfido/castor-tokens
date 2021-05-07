@@ -1,0 +1,22 @@
+{
+  "name": "@onfido/castor-tokens",
+  "version": "0.0.0",
+  "description": "Design tokens for Castor.",
+  "author": "Onfido",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onfido/castor-tokens.git",
+    "directory": "packages/npm"
+  },
+  "bugs": {
+    "url": "https://github.com/onfido/castor-tokens/issues"
+  },
+  "homepage": "https://github.com/onfido/castor-tokens",
+  "files": [
+    "index.scss",
+    "dist",
+    "src",
+    "!src/**/*.hbs"
+  ]
+}

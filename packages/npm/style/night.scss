@@ -1,0 +1,6 @@
+// this file will generate ./dist/night.css
+@use '../src' as theme;
+
+:root {
+  @include theme.night();
+}
