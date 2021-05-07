@@ -1,0 +1,7 @@
+// tokens generation by Theo (https://github.com/salesforce-ux/theo)
+
+@mixin tokens() {
+{{#each props as |prop|}}
+  --ods-{{prop.category}}-{{prop.name}}: {{prop.value}};
+{{/each}}
+}
