@@ -22,6 +22,7 @@ node_modules
 yarn.lock
 
 # Repository specific
+coverage
 dist
 packages/npm/src/tokens.scss
 packages/npm/src/theme-*.scss
