@@ -22,7 +22,7 @@
     "lint:commit": "commitlint --from origin/main --to HEAD --verbose",
     "lint:es": "eslint . --ignore-path .gitignore --max-warnings 0",
     "lint:style": "stylelint '**/*.{,s}css' --ignore-path .gitignore --max-warnings 0",
-    "lint:prettier": "prettier . --check --ignore-unknown --ignore-path .gitignore",
+    "lint:prettier": "prettier . --check --ignore-unknown",
     "release": "HUSKY=0 standard-version"
   },
   "devDependencies": {
