@@ -22,21 +22,41 @@ To install and switch to required version run:
 
 ## Make a change
 
-1.  Make sure that lint passes:
+1.  Make sure that tests pass:
+
+    `npm run test`
+
+2.  Make sure that lint passes:
 
     `npm run lint`
 
-2.  Commit according to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). We support these tools:
+3.  Commit according to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). We support these tools:
 
     - Commitizen, which runs automatically on a pre-commit Git hook thanks to Husky.
 
     - The [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits).
 
-3.  When opening a pull request, provide as much details as possible for a reviewer to better understand the change.
+4.  When opening a pull request, provide as much details as possible for a reviewer to better understand the change.
 
-4.  Check the change manually locally _before_ you assign reviewers.
+5.  Check the change manually locally _before_ you assign reviewers.
 
-5.  When a PR is approved - **do not merge** until acceptance testing is done, and the change is ready for a release.
+6.  When a PR is approved - **do not merge** until acceptance testing is done, and the change is ready for a release.
+
+### Run unit tests locally
+
+You can run unit tests as the CI would with:
+
+    npm run test
+
+That runs all specs and generates coverage reports.
+
+If you want watch mode for your changes only, use:
+
+    npx jest --watch
+
+You can also filter to a single file if you want, like:
+
+    npx jest --watch my-file
 
 ### Build package locally
 
@@ -44,7 +64,10 @@ You can build a package by running:
 
     npm run build
 
-It generates design tokens and themes, then builds compressed `.css` theme files (without source map) for vanilla integration.
+It generates design tokens and themes, then concurrently executes multiple step:
+
+- generating compressed `.css` theme files (without source map) for vanilla integration
+- generating ESM compiled `.js` from `.ts` files with `tsc` and `tsconfig.json`
 
 ## Publish new version
 
