@@ -38,7 +38,7 @@
     "esbuild": "^0.11.18",
     "eslint": "^7.26.0",
     "husky": "^6.0.0",
-    "lint-staged": "^10.5.2",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.2.0",
     "sass": "^1.32.12",
     "shx": "^0.3.3",
