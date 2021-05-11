@@ -1,5 +1,12 @@
 {
-  "bumpFiles": ["packages/npm/package.json", "package.json"],
+  "bumpFiles": [
+    "packages/npm/package.json",
+    "package.json",
+    {
+      "filename": "package-lock.json",
+      "updater": "scripts/bump-package-lock.cjs"
+    }
+  ],
   "scripts": {
     "postchangelog": "prettier CHANGELOG.md -w"
   }
