@@ -30,7 +30,7 @@
     "release": "HUSKY=0 standard-version"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.3",
+    "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.3",
     "@jest/globals": "^26.6.2",
     "@types/jest": "^26.0.23",
