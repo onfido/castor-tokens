@@ -1,0 +1,8 @@
+{
+  "imports": ["../themes/day.json", "../themes/night.json"],
+  "meta": {
+    "filterCategory": "color",
+    "sassVariableName": "theme-colors",
+    "typeName": "ThemeColors"
+  }
+}

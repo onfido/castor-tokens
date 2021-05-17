@@ -1,0 +1,8 @@
+{
+  "imports": ["../tokens.json"],
+  "meta": {
+    "filterCategory": "border-radius",
+    "sassVariableName": "border-radius",
+    "typeName": "BorderRadius"
+  }
+}

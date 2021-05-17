@@ -3,6 +3,9 @@
   "ignoreFiles": [
     "packages/npm/dist/*",
     "packages/npm/src/tokens.scss",
-    "packages/npm/src/theme-*.scss"
+    "packages/npm/src/theme-*.scss",
+    "packages/npm/src/definitions/border-radius.scss",
+    "packages/npm/src/definitions/color-palette.scss",
+    "packages/npm/src/definitions/theme-colors.scss"
   ]
 }

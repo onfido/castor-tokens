@@ -14,9 +14,7 @@ if (!themeName) throw new Error('No theme name provided');
 const colorScheme = process.env.COLOR_SCHEME;
 if (!colorScheme) throw new Error('No color scheme provided');
 
-const themesPath = join(__dirname, 'src/themes');
-
-const srcPath = join(themesPath, `${themeName}.json`);
+const srcPath = join(__dirname, `src/themes/${themeName}.json`);
 const formatPath = join(__dirname, 'packages/npm/src/theme.scss.hbs');
 const destPath = join(__dirname, `packages/npm/src/theme-${themeName}.scss`);
 

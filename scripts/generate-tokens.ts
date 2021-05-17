@@ -2,9 +2,7 @@ import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { convert, registerFormat } from 'theo';
 
-const tokensPath = join(__dirname, 'src/tokens');
-
-const srcPath = join(tokensPath, 'tokens.json');
+const srcPath = join(__dirname, 'src/tokens.json');
 const formatPath = join(__dirname, 'packages/npm/src/tokens.scss.hbs');
 const destPath = join(__dirname, 'packages/npm/src/tokens.scss');
 
