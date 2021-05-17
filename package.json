@@ -20,6 +20,7 @@
     "generate:tokens": "esbuild scripts/generate-tokens.ts --bundle --platform=node --target=es2019 --format=cjs --external:theo | node",
     "generate:theme:day": "esbuild scripts/generate-theme.ts --bundle --platform=node --target=es2019 --format=cjs --external:theo | THEME_NAME=day COLOR_SCHEME=light node",
     "generate:theme:night": "esbuild scripts/generate-theme.ts --bundle --platform=node --target=es2019 --format=cjs --external:theo | THEME_NAME=night COLOR_SCHEME=dark node",
+    "postgenerate": "prettier packages/npm/**/* --write",
     "prebuild": "shx rm -rf packages/*/dist && npm run generate",
     "build": "concurrently npm:build:*",
     "build:npm:css": "sass packages/npm/style:packages/npm/dist --no-source-map -s compressed",

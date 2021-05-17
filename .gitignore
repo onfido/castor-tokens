@@ -26,9 +26,5 @@ coverage
 dist
 packages/npm/src/tokens.scss
 packages/npm/src/theme-*.scss
-packages/npm/src/definitions/border-radius.scss
-packages/npm/src/definitions/borderRadius.ts
-packages/npm/src/definitions/color-palette.scss
-packages/npm/src/definitions/colorPalette.ts
-packages/npm/src/definitions/theme-colors.scss
-packages/npm/src/definitions/themeColors.ts
+packages/npm/src/definitions/*.scss
+packages/npm/src/definitions/*.ts
