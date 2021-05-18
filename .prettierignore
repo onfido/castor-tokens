@@ -2,6 +2,7 @@
 packages/npm/src/*.hbs
 
 # Theo generated files
+packages/npm/src/definitions
 packages/npm/src/tokens.scss
 packages/npm/src/theme-*.scss
 
