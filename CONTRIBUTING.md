@@ -64,7 +64,7 @@ You can build a package by running:
 
     npm run build
 
-It generates design tokens and themes, then concurrently executes multiple step:
+It generates design tokens and themes, their definitions, then concurrently executes multiple steps:
 
 - generating compressed `.css` theme files (without source map) for vanilla integration
 - generating ESM compiled `.js` from `.ts` files with `tsc` and `tsconfig.json`
