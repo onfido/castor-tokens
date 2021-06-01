@@ -1,3 +1,5 @@
+// tslint:disable:ordered-imports
+
 export * from './utils';
 
 // Theo generated files
