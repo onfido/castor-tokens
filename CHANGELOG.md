@@ -16,6 +16,4 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## 1.0.0-beta.1 (2021-05-07)
 
-# Changelog
-
 Initial release.
