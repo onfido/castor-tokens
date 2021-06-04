@@ -5,6 +5,10 @@
     {
       "filename": "package-lock.json",
       "updater": "scripts/bump-package-lock.cjs"
+    },
+    {
+      "filename": "libraries/android/castor-tokens/version.json",
+      "updater": "scripts/bump-android-version.cjs"
     }
   ],
   "scripts": {

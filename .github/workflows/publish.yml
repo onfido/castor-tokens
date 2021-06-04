@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    name: Publish package
+    name: Publish npm package
     runs-on: ubuntu-latest
 
     steps:
@@ -26,8 +26,8 @@ jobs:
       - name: Install Node dependencies
         run: npm ci --no-audit --no-optional
 
-      - name: Build package
-        run: npm run build
+      - name: Build npm package
+        run: npm run build:npm
 
       - name: Publish to npm
         uses: JS-DevTools/npm-publish@v1.4.3

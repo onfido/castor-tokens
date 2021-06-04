@@ -3,11 +3,11 @@ name: Build
 on:
   push:
     branches-ignore:
-      - release/* # already building package when publishing
+      - release/* # already building package/library when publishing
 
 jobs:
-  build:
-    name: Build package (test)
+  npm:
+    name: Build npm package (test)
     runs-on: ubuntu-latest
 
     steps:
@@ -27,4 +27,33 @@ jobs:
         run: npm ci --no-audit --no-optional
 
       - name: Build package
-        run: npm run build
+        run: npm run build:npm
+
+  android:
+    name: Build Android library (test)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v2.3.4
+
+      - name: Read .nvmrc
+        run: echo ::set-output name=NVMRC::$(cat .nvmrc)
+        id: nvm
+
+      - name: Setup Node (uses version from .nvmrc)
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: ${{ steps.nvm.outputs.NVMRC }}
+
+      - name: Install Node dependencies
+        run: npm ci --no-audit --no-optional
+
+      - name: Setup OpenJDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: adopt
+          java-version: 11
+
+      - name: Build library
+        run: npm run build:android

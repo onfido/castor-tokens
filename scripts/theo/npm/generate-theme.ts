@@ -7,6 +7,7 @@ import {
   registerTransform,
   registerValueTransform,
 } from 'theo';
+import { cssVar, opacity } from '../helpers';
 
 const themeName = process.env.THEME_NAME;
 if (!themeName) throw new Error('No theme name provided');
@@ -44,12 +45,3 @@ convert({
 })
   .then((data) => writeFileSync(destPath, data))
   .catch(console.error);
-
-function cssVar(prop: Prop) {
-  const [, alias] = `${prop.get('originalValue')}`.match(/^{!(.+)}$/) ?? [];
-  return `--ods-${alias}`;
-}
-
-function opacity(prop: Prop) {
-  return prop.getIn(['meta', 'opacity']) || 1;
-}
