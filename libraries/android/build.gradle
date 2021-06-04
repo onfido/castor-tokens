@@ -1,0 +1,28 @@
+buildscript {
+    ext.gradle_version = "4.1.3"
+    ext.kotlin_version = "1.3.72"
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place library dependencies here; they belong in the
+        // `castor-tokens` module `build.gradle` file.
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
