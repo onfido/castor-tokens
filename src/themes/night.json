@@ -121,6 +121,15 @@
     {
       "type": "color",
       "category": "color",
+      "name": "content-progress",
+      "value": "{!color-primary-muted-300}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
       "name": "content-logo",
       "value": "{!color-neutral-white}",
       "meta": {
@@ -384,6 +393,15 @@
       "category": "color",
       "name": "background-spinner",
       "value": "{!color-neutral-400}",
+      "meta": {
+        "opacity": 0.15
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "background-progress",
+      "value": "{!color-primary-muted-300}",
       "meta": {
         "opacity": 0.15
       }
