@@ -13,7 +13,7 @@
   },
   "scripts": {
     "postinstall": "husky install",
-    "generate": "npm run generate:npm && npm run generate:android",
+    "generate": "concurrently generate:npm generate:android",
     "pregenerate:npm": "shx mkdir -p packages/npm/src/definitions",
     "generate:npm": "concurrently npm:generate:npm:*",
     "generate:npm:definitions:border-radius": "esbuild scripts/theo/npm/generate-definitions.ts --bundle --platform=node --target=es2019 --format=cjs --external:theo | DEFINITIONS_NAME=border-radius node",
@@ -27,7 +27,7 @@
     "generate:android:values:color": "esbuild scripts/theo/android/generate-values.ts --bundle --platform=node --target=es2019 --format=cjs --external:theo | VALUES_NAME=color node",
     "generate:android:values:color-night": "esbuild scripts/theo/android/generate-values.ts --bundle --platform=node --target=es2019 --format=cjs --external:theo | VALUES_NAME=color NIGHT_MODE=true node",
     "generate:android:values:dimen": "esbuild scripts/theo/android/generate-values.ts --bundle --platform=node --target=es2019 --format=cjs --external:theo | VALUES_NAME=dimen node",
-    "build": "npm run build:npm && npm run build:android",
+    "build": "concurrently npm:build:npm npm:build:android",
     "prebuild:npm": "shx rm -rf packages/*/dist && npm run generate:npm",
     "build:npm": "concurrently npm:build:npm:*",
     "build:npm:css": "sass packages/npm/style:packages/npm/dist --no-source-map -s compressed",
