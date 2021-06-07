@@ -6,7 +6,10 @@ If you have further questions please discuss the change you wish to make with th
 
 ## Get ready for development
 
-You will need Node 14 and npm 7, also Android Studio and OpenJDK 11 running locally.
+You will need:
+
+- for npm package: Node 14 and npm 7
+- for Android library: Android Studio and OpenJDK 11
 
 **1. Install Node**
 
