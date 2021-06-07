@@ -55,9 +55,8 @@ registerTransform('android', [
     const obj = {
       resources: result
         .get('props')
+        .filter((prop: Prop) => prop.get('type') === propTypeFilter)
         .map((prop: Prop) => {
-          if (prop.get('type') !== propTypeFilter) return;
-
           const fullName = `${prop.get('category')}_${prop.get('name')}`;
           const attrName = 'ods_' + fullName.replaceAll('-', '_');
 
