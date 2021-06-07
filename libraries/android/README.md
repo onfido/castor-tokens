@@ -33,5 +33,5 @@ android:background="@color/ods_color_background_main"
 Dimen:
 
 ```xml
-android:background="@dimen/ods_border_radius_medium"
+android:radius="@dimen/ods_border_radius_medium"
 ```
