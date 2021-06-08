@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Build npm package & Android library (test)
+    name: Build package & library (test)
     runs-on: ubuntu-latest
 
     steps:

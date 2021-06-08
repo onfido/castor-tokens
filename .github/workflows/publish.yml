@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    name: Publish npm package & Android library
+    name: Publish package & library
     runs-on: ubuntu-latest
 
     steps:
