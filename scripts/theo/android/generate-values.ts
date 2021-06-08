@@ -59,7 +59,7 @@ registerTransform('android', [
         .filter((prop: Prop) => !!prop.get('value'))
         .map((prop: Prop) => {
           const fullName = `${prop.get('category')}_${prop.get('name')}`;
-          const attrName = 'ods_' + fullName.replace(/[-]/g, '_');
+          const attrName = 'ods_' + fullName.replace(/-/g, '_');
 
           return {
             [resourceKey]: [
