@@ -32,4 +32,5 @@ packages/npm/src/definitions
 packages/npm/src/tokens.scss
 packages/npm/src/theme-*.scss
 libraries/**/build
+libraries/*/gradlew.bat
 libraries/android/*/src/main/res/values*
