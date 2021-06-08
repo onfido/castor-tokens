@@ -1,3 +1,11 @@
 {
-  "imports": ["../tokens.json"]
+  "imports": ["../tokens.json"],
+  "props": [
+    {
+      "type": "size",
+      "category": "border-radius",
+      "name": "full",
+      "value": null
+    }
+  ]
 }
