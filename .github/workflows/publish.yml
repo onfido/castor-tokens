@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    name: Publish package & library
+    name: Publish package
     runs-on: ubuntu-latest
 
     steps:
@@ -26,27 +26,11 @@ jobs:
       - name: Install Node dependencies
         run: npm ci --no-audit --no-optional
 
-      - name: Setup OpenJDK
-        uses: actions/setup-java@v2
-        with:
-          distribution: adopt
-          java-version: 11
-
-      - name: Build package & library
-        run: npm run build
+      - name: Build npm package
+        run: npm run build:npm
 
       - name: Publish to npm
         uses: JS-DevTools/npm-publish@v1.4.3
         with:
           package: ./packages/npm/package.json
           token: ${{ secrets.NPM_TOKEN }}
-
-      - name: Make GitHub release, publish asset
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: |
-            libraries/android/castor-tokens/build/outputs/aar/castor-tokens-debug.aar
-            libraries/android/castor-tokens/build/outputs/aar/castor-tokens-release.aar
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
