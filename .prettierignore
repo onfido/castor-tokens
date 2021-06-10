@@ -6,6 +6,7 @@ packages/npm/src/definitions
 packages/npm/src/tokens.scss
 packages/npm/src/theme-*.scss
 
-# Distribution files
+# Other generated files
 coverage
-dist
+packages/*/dist
+libraries/**/build

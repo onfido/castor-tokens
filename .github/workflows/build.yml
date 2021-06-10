@@ -3,11 +3,11 @@ name: Build
 on:
   push:
     branches-ignore:
-      - release/* # already building package when publishing
+      - release/* # already building package/library when publishing
 
 jobs:
   build:
-    name: Build package (test)
+    name: Build package & library (test)
     runs-on: ubuntu-latest
 
     steps:
@@ -26,5 +26,11 @@ jobs:
       - name: Install Node dependencies
         run: npm ci --no-audit --no-optional
 
-      - name: Build package
+      - name: Setup OpenJDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: adopt
+          java-version: 11
+
+      - name: Build package & library
         run: npm run build

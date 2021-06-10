@@ -1,0 +1,2 @@
+include ":castor-tokens"
+rootProject.name = "Castor Tokens"

@@ -6,7 +6,10 @@ If you have further questions please discuss the change you wish to make with th
 
 ## Get ready for development
 
-You will need Node 14 and npm 7 running locally.
+You will need:
+
+- for npm package: Node 14 and npm 7
+- for Android library: Android Studio and OpenJDK 11
 
 **1. Install Node**
 
@@ -19,6 +22,20 @@ To install and switch to required version run:
 **2. Install local Node dependencies**
 
     npm install
+
+**3. Install Android Studio**
+
+Install via Homebrew (Cask):
+
+    brew install --cask android-studio
+
+**4. Install OpenJDK**
+
+Install via Homebrew:
+
+    brew install openjdk@11
+
+Finish by following instructions on console to set the exports.
 
 ## Make a change
 
@@ -58,16 +75,24 @@ You can also filter to a single file if you want, like:
 
     npx jest --watch my-file
 
-### Build package locally
+### Build npm package locally
 
 You can build a package by running:
 
-    npm run build
+    npm run build:npm
 
 It generates design tokens and themes, their definitions, then concurrently executes multiple steps:
 
 - generating compressed `.css` theme files (without source map) for vanilla integration
 - generating ESM compiled `.js` from `.ts` files with `tsc` and `tsconfig.json`
+
+### Build Android library locally
+
+You can build a library by running:
+
+    npm run build:android
+
+It generates design values (incl. "night" mode), then builds release and debug AARs with Gradle.
 
 ## Publish new version
 
