@@ -57,7 +57,7 @@
     "commitizen": "^4.2.4",
     "concurrently": "^6.2.0",
     "cz-conventional-changelog": "^3.3.0",
-    "esbuild": "^0.12.6",
+    "esbuild": "^0.12.8",
     "eslint": "^7.28.0",
     "husky": "^6.0.0",
     "jest": "^27.0.4",
