@@ -27,6 +27,8 @@ libraries/*/local.properties
 
 # Repository specific
 coverage
+example/themes
+example/tokens.html
 packages/*/dist
 packages/npm/src/definitions
 packages/npm/src/tokens.scss

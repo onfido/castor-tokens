@@ -94,6 +94,12 @@ You can build a library by running:
 
 It generates design values (incl. "night" mode), then builds release and debug AARs with Gradle.
 
+### Preview locally
+
+You can preview an example generated of base and theme tokens with:
+
+    npm run preview
+
 ## Publish new version
 
 Only maintainers of this repository are allowed to make releases.

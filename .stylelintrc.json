@@ -1,6 +1,8 @@
 {
   "extends": "stylelint-config-sass-guidelines",
   "ignoreFiles": [
+    "example/themes/*",
+    "example/tokens.html",
     "packages/npm/dist/*",
     "packages/npm/src/definitions/*",
     "packages/npm/src/tokens.scss",

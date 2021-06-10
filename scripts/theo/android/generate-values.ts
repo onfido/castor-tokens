@@ -1,33 +1,24 @@
 import { writeFileSync } from 'fs';
-import { join } from 'path';
-import {
-  convert,
-  Format,
-  Prop,
-  registerFormat,
-  registerTransform,
-  registerValueTransform,
-} from 'theo';
+import { resolve } from 'path';
+import { convert, Format, Prop, registerFormat, registerTransform } from 'theo';
 import xml from 'xml';
-import { opacity } from '../helpers';
+import { registerOdsValueTransform } from '../helpers';
 
 const valuesName = process.env.VALUES_NAME;
 if (!valuesName) throw new Error('No values name provided');
 
 const fileSuffix = process.env.NIGHT_MODE ? '-night' : '';
 
-const srcPath = join(__dirname, `src/values/${valuesName}${fileSuffix}.json`);
-const destPath = join(
+const srcPath = resolve(
+  __dirname,
+  `src/values/${valuesName}${fileSuffix}.json`
+);
+const destPath = resolve(
   __dirname,
   `libraries/android/castor-tokens/src/main/res/values${fileSuffix}/castor-${valuesName}.xml`
 );
 
-registerValueTransform(
-  'ods/color/rgba',
-  (prop: Prop) => prop.get('type') === 'color',
-  (prop: Prop) => `rgba(${prop.get('value')}, ${opacity(prop)})`
-);
-
+registerOdsValueTransform('ods/color/rgba');
 registerTransform('android', [
   'ods/color/rgba',
   // keep default Theo transforms
@@ -92,5 +83,5 @@ convert({
     type: `android-${valuesName}.xml` as Format,
   },
 })
-  .then((data) => writeFileSync(join(destPath), data))
+  .then((data) => writeFileSync(resolve(destPath), data))
   .catch(console.error);
