@@ -8,5 +8,7 @@ packages/npm/src/theme-*.scss
 
 # Other generated files
 coverage
+example/themes
+example/tokens.html
 packages/*/dist
 libraries/**/build

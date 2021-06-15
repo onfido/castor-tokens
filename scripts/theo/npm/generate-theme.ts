@@ -1,13 +1,7 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { join } from 'path';
-import {
-  convert,
-  Prop,
-  registerFormat,
-  registerTransform,
-  registerValueTransform,
-} from 'theo';
-import { cssVar, opacity } from '../helpers';
+import { resolve } from 'path';
+import { convert, registerFormat, registerTransform } from 'theo';
+import { registerOdsValueTransform } from '../helpers';
 
 const themeName = process.env.THEME_NAME;
 if (!themeName) throw new Error('No theme name provided');
@@ -15,16 +9,11 @@ if (!themeName) throw new Error('No theme name provided');
 const colorScheme = process.env.COLOR_SCHEME;
 if (!colorScheme) throw new Error('No color scheme provided');
 
-const srcPath = join(__dirname, `src/themes/${themeName}.json`);
-const formatPath = join(__dirname, 'packages/npm/src/theme.scss.hbs');
-const destPath = join(__dirname, `packages/npm/src/theme-${themeName}.scss`);
+const srcPath = resolve(__dirname, `src/themes/${themeName}.json`);
+const formatPath = resolve(__dirname, 'packages/npm/src/theme.scss.hbs');
+const destPath = resolve(__dirname, `packages/npm/src/theme-${themeName}.scss`);
 
-registerValueTransform(
-  'ods/color/var',
-  (prop: Prop) => prop.get('type') === 'color',
-  (prop: Prop) => `var(${cssVar(prop)}), ${opacity(prop)}`
-);
-
+registerOdsValueTransform('ods/color/var');
 registerTransform('raw', ['ods/color/var']);
 
 registerFormat(
