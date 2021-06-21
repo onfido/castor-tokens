@@ -13,7 +13,7 @@
   },
   "scripts": {
     "postinstall": "husky install",
-    "generate": "concurrently generate:example generate:npm generate:android",
+    "generate": "concurrently npm:generate:example npm:generate:npm npm:generate:android",
     "pregenerate:example": "shx mkdir -p example/themes",
     "generate:example": "concurrently npm:generate:example:*",
     "generate:example:tokens": "esbuild scripts/theo/generate-example.ts --bundle --platform=node --target=es2019 --format=cjs --external:theo | FILE_NAME=tokens node",
