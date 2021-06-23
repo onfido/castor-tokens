@@ -1,3 +1,3 @@
 {
-  "imports": ["../tokens.json", "../themes/night.json"]
+  "imports": ["../themes/night.json"]
 }
