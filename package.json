@@ -53,7 +53,7 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "@jest/globals": "^27.0.6",
+    "@jest/globals": "^27.1.0",
     "@types/jest": "^27.0.1",
     "@types/lodash": "^4.14.172",
     "@types/node": "^15.14.0",
