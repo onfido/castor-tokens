@@ -5,7 +5,7 @@
       "type": "color",
       "category": "color",
       "name": "content-main",
-      "value": "{!color-neutral-200}",
+      "value": "{!color-neutral-100}",
       "meta": {
         "opacity": 1
       }
@@ -14,7 +14,7 @@
       "type": "color",
       "category": "color",
       "name": "content-secondary",
-      "value": "{!color-neutral-500}",
+      "value": "{!color-neutral-400}",
       "meta": {
         "opacity": 1
       }
@@ -23,7 +23,7 @@
       "type": "color",
       "category": "color",
       "name": "content-action",
-      "value": "{!color-neutral-200}",
+      "value": "{!color-neutral-100}",
       "meta": {
         "opacity": 1
       }
@@ -32,7 +32,7 @@
       "type": "color",
       "category": "color",
       "name": "content-placeholder",
-      "value": "{!color-neutral-600}",
+      "value": "{!color-neutral-500}",
       "meta": {
         "opacity": 1
       }
@@ -41,7 +41,7 @@
       "type": "color",
       "category": "color",
       "name": "content-disabled",
-      "value": "{!color-neutral-600}",
+      "value": "{!color-neutral-500}",
       "meta": {
         "opacity": 1
       }
@@ -149,7 +149,7 @@
       "type": "color",
       "category": "color",
       "name": "content-inverse-secondary",
-      "value": "{!color-neutral-700}",
+      "value": "{!color-neutral-600}",
       "meta": {
         "opacity": 1
       }
@@ -167,7 +167,7 @@
       "type": "color",
       "category": "color",
       "name": "content-on-inverse-action",
-      "value": "{!color-neutral-200}",
+      "value": "{!color-neutral-100}",
       "meta": {
         "opacity": 1
       }
@@ -176,7 +176,7 @@
       "type": "color",
       "category": "color",
       "name": "content-always-light",
-      "value": "{!color-neutral-200}",
+      "value": "{!color-neutral-100}",
       "meta": {
         "opacity": 1
       }
@@ -212,7 +212,7 @@
       "type": "color",
       "category": "color",
       "name": "background-surface-alt",
-      "value": "{!color-neutral-700}",
+      "value": "{!color-neutral-600}",
       "meta": {
         "opacity": 1
       }
@@ -221,7 +221,7 @@
       "type": "color",
       "category": "color",
       "name": "background-action",
-      "value": "{!color-neutral-200}",
+      "value": "{!color-neutral-100}",
       "meta": {
         "opacity": 1
       }
@@ -266,7 +266,7 @@
       "type": "color",
       "category": "color",
       "name": "background-disabled",
-      "value": "{!color-neutral-700}",
+      "value": "{!color-neutral-600}",
       "meta": {
         "opacity": 1
       }
@@ -383,7 +383,7 @@
       "type": "color",
       "category": "color",
       "name": "background-input-selected",
-      "value": "{!color-neutral-200}",
+      "value": "{!color-neutral-100}",
       "meta": {
         "opacity": 1
       }
@@ -392,7 +392,7 @@
       "type": "color",
       "category": "color",
       "name": "background-spinner",
-      "value": "{!color-neutral-400}",
+      "value": "{!color-neutral-300}",
       "meta": {
         "opacity": 0.15
       }
@@ -428,7 +428,7 @@
       "type": "color",
       "category": "color",
       "name": "background-inverse-main",
-      "value": "{!color-neutral-200}",
+      "value": "{!color-neutral-100}",
       "meta": {
         "opacity": 1
       }
@@ -455,7 +455,7 @@
       "type": "color",
       "category": "color",
       "name": "border-separator",
-      "value": "{!color-neutral-900}",
+      "value": "{!color-neutral-700}",
       "meta": {
         "opacity": 1
       }
@@ -464,15 +464,6 @@
       "type": "color",
       "category": "color",
       "name": "border-input",
-      "value": "{!color-neutral-600}",
-      "meta": {
-        "opacity": 1
-      }
-    },
-    {
-      "type": "color",
-      "category": "color",
-      "name": "border-input-hover",
       "value": "{!color-neutral-500}",
       "meta": {
         "opacity": 1
@@ -481,8 +472,17 @@
     {
       "type": "color",
       "category": "color",
+      "name": "border-input-hover",
+      "value": "{!color-neutral-400}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
       "name": "border-action",
-      "value": "{!color-neutral-600}",
+      "value": "{!color-neutral-500}",
       "meta": {
         "opacity": 1
       }
@@ -491,7 +491,7 @@
       "type": "color",
       "category": "color",
       "name": "border-action-hover",
-      "value": "{!color-primary-500}",
+      "value": "{!color-neutral-400}",
       "meta": {
         "opacity": 1
       }
@@ -590,7 +590,7 @@
       "type": "color",
       "category": "color",
       "name": "border-input-selected",
-      "value": "{!color-neutral-200}",
+      "value": "{!color-neutral-100}",
       "meta": {
         "opacity": 1
       }
