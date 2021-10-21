@@ -250,7 +250,7 @@
       "name": "background-action-subtle",
       "value": "{!color-primary-300}",
       "meta": {
-        "opacity": 0.2
+        "opacity": 0.3
       }
     },
     {
@@ -259,7 +259,7 @@
       "name": "background-action-subtle-hover",
       "value": "{!color-primary-300}",
       "meta": {
-        "opacity": 0.1
+        "opacity": 0.2
       }
     },
     {
