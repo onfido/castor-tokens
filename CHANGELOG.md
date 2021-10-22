@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-- - neutral-700 to neutral-200 have been renamed one digit down
+- neutral-700 to neutral-200 have been renamed one digit down
 
 * neutral-700 has been introduced as a new token in place of the old one
 
