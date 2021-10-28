@@ -73,7 +73,7 @@
     "lodash": "^4.17.21",
     "prettier": "^2.4.1",
     "prettier-plugin-organize-imports": "^2.3.4",
-    "sass": "^1.43.3",
+    "sass": "^1.43.4",
     "shx": "^0.3.3",
     "standard-version": "^9.3.2",
     "stylelint": "^13.13.1",
