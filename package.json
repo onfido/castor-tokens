@@ -64,7 +64,7 @@
     "commitizen": "^4.2.4",
     "concurrently": "^6.4.0",
     "cz-conventional-changelog": "^3.3.0",
-    "esbuild": "^0.14.0",
+    "esbuild": "^0.14.1",
     "eslint": "^8.3.0",
     "http-server": "^14.0.0",
     "husky": "^7.0.4",
