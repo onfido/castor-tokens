@@ -65,7 +65,7 @@
     "concurrently": "^7.2.0",
     "cz-conventional-changelog": "^3.3.0",
     "esbuild": "^0.14.39",
-    "eslint": "^8.14.0",
+    "eslint": "^8.15.0",
     "http-server": "^14.1.0",
     "husky": "^8.0.1",
     "jest": "^27.5.1",
