@@ -75,7 +75,7 @@
     "prettier-plugin-organize-imports": "^2.3.4",
     "sass": "^1.51.0",
     "shx": "^0.3.4",
-    "standard-version": "^9.3.2",
+    "standard-version": "^9.5.0",
     "stylelint": "^14.8.2",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "theo": "^8.1.5",
