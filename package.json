@@ -76,7 +76,7 @@
     "sass": "^1.52.0",
     "shx": "^0.3.4",
     "standard-version": "^9.5.0",
-    "stylelint": "^14.8.2",
+    "stylelint": "^14.8.5",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "theo": "^8.1.5",
     "ts-jest": "^27.1.4",
