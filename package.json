@@ -60,7 +60,7 @@
     "@types/theo": "^8.1.4",
     "@types/xml": "^1.0.8",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
+    "@typescript-eslint/parser": "^5.38.1",
     "commitizen": "^4.2.5",
     "concurrently": "^7.4.0",
     "cz-conventional-changelog": "^3.3.0",
