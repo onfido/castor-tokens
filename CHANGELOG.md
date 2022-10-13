@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-beta.6](https://github.com/onfido/castor-tokens/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2022-10-13)
+
+### Bug Fixes
+
+- **npm:** correct element & array of elements typing for theme switching ([59d2aeb](https://github.com/onfido/castor-tokens/commit/59d2aeb9da7dd9a300e6c2090f3318698572e1d0))
+
 ## [1.0.0-beta.5](https://github.com/onfido/castor-tokens/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2021-10-21)
 
 ### ⚠ BREAKING CHANGES
