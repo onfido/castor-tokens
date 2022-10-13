@@ -16,26 +16,20 @@
  */
 export function switchTheme(
   themeName: string,
-  selection: Selection = document.body
+  selection: Element | ArrayLike<Element> | null = document.body
 ): void {
   if (!selection)
     throw new Error('Unable to switch theme: no selection available');
 
   if ('length' in selection)
-    return Array.from(selection).forEach((element) =>
+    return Array.from(selection as ArrayLike<Element>).forEach((element) =>
       switchTheme(themeName, element)
     );
 
-  selection.className = selection.className.replace(classNameRegExp, '');
-  selection.classList.add(prefix + themeName);
+  const element: Element = selection;
+  element.className = element.className.replace(classNameRegExp, '');
+  element.classList.add(prefix + themeName);
 }
 
 const prefix = 'castor-theme--';
 const classNameRegExp = new RegExp(`${prefix}\\w+[-\\w]*`, 'g');
-
-type Selection =
-  | Element
-  | Element[]
-  | HTMLCollectionOf<Element>
-  | NodeListOf<Element>
-  | null;
