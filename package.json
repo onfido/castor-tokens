@@ -55,7 +55,7 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@jest/globals": "^29.2.2",
     "@types/jest": "^27.4.1",
-    "@types/lodash": "^4.14.186",
+    "@types/lodash": "^4.14.187",
     "@types/node": "^18.11.9",
     "@types/theo": "^8.1.4",
     "@types/xml": "^1.0.8",
