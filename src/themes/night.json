@@ -454,6 +454,123 @@
     {
       "type": "color",
       "category": "color",
+      "name": "background-switch-selected",
+      "value": "{!color-primary-400}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "background-switch-handle-selected",
+      "value": "{!color-neutral-050}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "background-switch-selected-hover",
+      "value": "{!color-primary-300}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "background-switch-handle-selected-hover",
+      "value": "{!color-neutral-500}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "background-switch-handle-unselected",
+      "value": "{!color-neutral-500}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "background-switch-handle-unselected-hover",
+      "value": "{!color-neutral-400}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "background-switch-handle-unselected-disabled",
+      "value": "{!color-neutral-600}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "content-switch-handle-selected",
+      "value": "{!color-primary-400}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "content-switch-handle-selected-hover",
+      "value": "{!color-primary-300}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "content-switch-handle-selected-disabled",
+      "value": "{!color-neutral-700}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "border-switch-selected",
+      "value": "{!color-primary-400}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "border-switch-selected-hover",
+      "value": "{!color-primary-300}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
+      "name": "border-switch-selected-disabled",
+      "value": "{!color-neutral-600}",
+      "meta": {
+        "opacity": 1
+      }
+    },
+    {
+      "type": "color",
+      "category": "color",
       "name": "border-separator",
       "value": "{!color-neutral-700}",
       "meta": {
