@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/onfido/castor-tokens/compare/v1.0.0-beta.6...v1.0.0) (2024-08-08)
+
+### Features
+
+- add switch tokens ([#1113](https://github.com/onfido/castor-tokens/issues/1113)) ([5454990](https://github.com/onfido/castor-tokens/commit/5454990a6a6caf223c2af1f753522d4d1905b666))
+
 ## [1.0.0-beta.6](https://github.com/onfido/castor-tokens/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2022-10-13)
 
 ### Bug Fixes
