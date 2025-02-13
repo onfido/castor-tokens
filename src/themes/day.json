@@ -392,7 +392,7 @@
       "type": "color",
       "category": "color",
       "name": "background-spinner",
-      "value": "{!color-neutral-600}",
+      "value": "{!color-neutral-700}",
       "meta": {
         "opacity": 0.15
       }
